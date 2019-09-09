@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UCR Robosub</title>
+  <meta name="description" content="The official website for UCR Robosub">
+  <meta name="author" content="Jack Kolb - Mechanical Lead">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+</head>
+
+<style>
+body {
+  background-image: url("img/water_1.jpg");
+
+  font-family: "Tahoma", Tahoma, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: gold;
+}
+
+.title-bar {
+  background-color: rgba(0, 0, 100, .6);
+  width: 80%;
+  height: auto;
+  padding: 5pt;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-text {
+  font-size: 32pt;
+}
+
+.section-bar {
+  background-color: rgba(0, 0, 100, .6);
+  width: 80%;
+  height: auto;
+  padding: 5pt;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: 20pt;
+  color: gold;
+}
+
+.section-text {
+  background-color: rgba(30, 30, 30, .4);
+  width: 80%;
+  height: auto;
+  padding: 5pt;
+  text-align: justify;
+
+  font-size: 18pt;
+
+  color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-box {
+  background-color: rgba(30, 30, 30, .4);
+  width: 80%;
+  height: auto;
+  padding: 5pt;
+  text-align: justify;
+
+  font-size: 13pt;
+
+  color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+}
+
+.gallery-slides {
+  width: 30%;
+  align: center;
+}
+
+.thumb {
+    display: inline-block;
+    width: 30%;
+    height: 30%;
+    margin: 5px;
+    border: 3px solid #c99;
+    background-position: center center;
+    background-size: cover;
+}
+
+</style>
+
+<body>
+
+<br>
+
+<div class="title-bar">
+  <div class="title-text">
+    <span style="color:gold">Robosub</span> <span style="color:lightgrey">@</span> <span style="color:lightblue">UCR</span>
+  </div>
+</div>
+
+<br><br>
+
+<div class="section-bar">
+  <div class="section-title">
+    <a href="https://drive.google.com/open?id=1lHKDDqMXyv06I2JghVA8cLPVvebt338a" target="_blank">[ Click Here for our Sponsorship Package ]</a>
+  </div>
+</div>
+
+<br><br>
+
+<div class="section-bar">
+  <div class="section-title">
+    About
+  </div>
+</div>
+
+<div class="section-text">
+  <br>
+  UCR Robosub is an autonomous AUV project, competing internationally in Robonation's Robosub competition. The project started in Fall 2015, and has been active ever since.
+  <br><br>
+  The goal is to create a completely autonomous submarine capable of performing a number of tasks entirely on its own: we place it in the water, it runs the randomized course, completes a number of obstacles (which change annually) and returns to the launch point. The sheer volume of design and construction needed requires a large interdisciplinary team working collaboratively to share expertise and communication throughout the process.
+  <br><br>
+  The project exposes all students to utilizing their coursework skills, working with others outside their major, and granting experience with a large-scale project with real-world applications. For the 2017-2018 school year, UCR Robosub has ~20 members on the team, across almost every engineering major.
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="section-bar">
+  <div class="section-title">
+    Gallery
+  </div>
+</div>
+
+<div class="gallery-box">
+  <img class="gallery-slides" src="img/sub_overall.jpg">
+  <img class="gallery-slides" src="img/sub_camera.jpg">
+  <img class="gallery-slides" src="img/sub_torpedo.jpg">
+  <img class="gallery-slides" src="img/sub_presentation.jpg">
+  <img class="gallery-slides" src="img/sub_transdec.jpg">
+  <img class="gallery-slides" src="img/highlander_day.jpg">
+  <img class="gallery-slides" src="img/sub_me_team.jpg">
+  <img class="gallery-slides" src="img/sub_ee_team.jpg">
+  <img class="gallery-slides" src="img/sub_roger.jpg">
+
+</div>
+
+<script>
+  var slideIndex = 0;
+  carousel();
+
+  function carousel() {
+      var i;
+      var slides = document.getElementsByClassName("gallery-slides");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+      
+
+      if (slideIndex == slides.length - 1) {
+        slides[slideIndex].style.display = "inline-block";
+        slides[0].style.display = "inline-block";
+        slides[slideIndex-1].style.display = "inline-block";
+      }
+      else if (slideIndex == slides.length) {
+        slides[0].style.display = "inline-block";
+        slides[1].style.display = "inline-block";
+        slides[slideIndex-1].style.display = "inline-block";
+      }
+      else {
+        slides[slideIndex-1].style.display = "inline-block";
+        slides[slideIndex].style.display = "inline-block";
+        slides[slideIndex+1].style.display = "inline-block";
+      }  
+
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+  }
+</script>
+
+<br><br>
+
+<div class="section-bar">
+  <div class="section-title">
+    The Teams
+  </div>
+</div>
+
+<div class="section-text">
+  <br>
+  The project is divided into four teams: Mechanical, Electrical, Software, and Business. As most of the work is monodisciplinary, the teams work mostly independently during the Fall quarter on their respective portions, coming together in the Winter and Spring to piece the results together, make adjustments, and focus on cross-disciplinary aspects. Biweekly general meetings are forums for members to ask questions and plan designs around the needs of other teams.
+  <br><br>
+  The mechanical team works on the physical design and construction of the submarine. The entire submarine is modeled in Solidworks, with small teams designing and modeling additional components. As the competition objectives change annually, only the base design is reused. The division of work into many small groups allows everyone involved to contribute.
+  <br><br>
+  The electrical team designs the electronic circuitry and manages the components. With custom PCBs and a variety of interconnected parts, they extensively apply their coursework knowledge to manage power, heat dipersion, and a large number of components working asynchronously.
+  <br><br>
+  The software team develops the artificial intelligence portion of the submarine, connecting the mechanical and electrical components to give the submarine life. Using advanced tools including OpenCV and ROS, they create the algorithms to identify objectives (through water's defraction and hazing no less), control the submarine, and accomplish the tasks.
+  <br><br>
+  The business team works to secure fundraising and sponsorships for the project, managing communication and searching for partnerships. 
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="section-bar">
+  <div class="section-title">
+    Leadership Contact
+  </div>
+</div>
+
+<div class="section-text">
+  <br>
+  Project Lead: Adam Anunciation (Electrical Engineering) -- aanun001@ucr.edu
+  <br><br>
+  Mechanical Lead: Jack Kolb (Mechanical Engineering) -- jkolb001@ucr.edu
+  <br><br>
+  Electrical Lead: Gerardo Hernandez (Electrical Engineering) -- ghern027@ucr.edu
+  <br><br>
+  Software Lead: Rogelio Vazquez (Computer Engineering) -- rvazq002@ucr.edu
+  <br><br>
+  Business Lead: Sam Hershkowitz (Business Administration) -- phers001@ucr.edu
+  <br><br>
+</div>
+
+<br><br>
+
+<div class="section-bar">
+  <div class="section-title">
+    Sponsors (HUGE thanks!)
+  </div>
+</div>
+
+<div class="section-text">
+  <a href="https://www.altium.com" target="_blank"><img style="height: 50pt" src="logos/altium.jpg"></a>
+  <a href="http://www.martinezandturek.com" target="_blank"><img style="height: 50pt" src="logos/mandt.jpg"></a>
+  <a href="https://www.electronicswarehouse.net" target="_blank"><img style="height: 50pt" src="logos/electronics_warehouse.jpg"></a>
+  <a href="https://www.industrialmetalsupply.com" target="_blank"><img style="height: 50pt" src="logos/ims.jpg"></a>
+  <a href="https://www.luxfercylinders.com" target="_blank"><img style="height: 50pt" src="logos/luxfer.jpg"></a>
+</div>
+
+<br><br>
+
+</body>
+</html>

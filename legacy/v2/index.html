@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>UCR Robosub</title>
+  <meta name="description" content="The official website for UCR Robosub">
+  <meta name="author" content="Jack Kolb - Project Lead">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <link rel="shortcut icon" type="image/x-icon" href="/logos/seadragon_favicon_3.ico">
+</head>
+
+<link rel="stylesheet" type="text/css" href="css/menubar.css">
+<link rel="stylesheet" type="text/css" href="css/formatting.css">
+
+</head>
+<body>
+
+<img src="logos/robosub_ucr_long.png" alt="Seadragon | UCR" style="width:100%">
+
+<ul>
+    <li><a id="home_tab" onclick="load_home();">Home</a></li>
+    <li><a id="about_tab" onclick="load_about();">About</a></li>
+    <li><a id="teams_tab" onclick="load_teams();">The Team</a></li>
+    <!--<li><a id="gallery_tab" onclick="load_gallery();">Gallery</a></li>-->
+    <li><a id="sponsors_tab" onclick="load_sponsors();">Sponsors</a></li>
+    <li><a id="contact_tab" onclick="load_contact();">Contact</a></li>
+    <li style="float:right"><a href="https://drive.google.com/open?id=1JVzUF7-XuY85mqzIuGSjLL3yrxfpuCua" target="_blank">Sponsorship Proposal</a></li>
+</ul>
+
+<div id="content" class="section-text"></div>
+<script src="js/utilities.js"></script>
+<script src="photos/get_images.php"></script>
+
+<script>
+    load_home();
+
+    function load_home() {
+        document.getElementById("content").innerHTML = get_text_from_file("html/home.html");   
+        isolate_active("home_tab");
+    }
+
+    function load_about() {
+        document.getElementById("content").innerHTML = get_text_from_file("html/about.html");
+        isolate_active("about_tab");
+    }
+
+    function load_teams() {
+        document.getElementById("content").innerHTML = get_text_from_file("html/team.html");    
+        isolate_active("teams_tab");
+    }
+
+    function load_gallery() {
+    }
+
+    function load_sponsors() {
+        document.getElementById("content").innerHTML = get_text_from_file("html/sponsors.html");
+        isolate_active("sponsors_tab");    
+    }
+
+    function load_contact() {
+        document.getElementById("content").innerHTML = get_text_from_file("html/contact.html");  
+        isolate_active("contact_tab"); 
+    }
+</script>
+
+</body>
+</html>
