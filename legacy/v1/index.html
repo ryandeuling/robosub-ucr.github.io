@@ -16,11 +16,6 @@ body {
   font-family: "Tahoma", Tahoma, sans-serif;
 }
 
-a {
-  text-decoration: none;
-  color: gold;
-}
-
 .title-bar {
   background-color: rgba(0, 0, 100, .6);
   width: 80%;
@@ -84,11 +79,6 @@ a {
   text-align: center;
 }
 
-.gallery-slides {
-  width: 30%;
-  align: center;
-}
-
 .thumb {
     display: inline-block;
     width: 30%;
@@ -115,7 +105,7 @@ a {
 
 <div class="section-bar">
   <div class="section-title">
-    <a href="https://drive.google.com/open?id=1lHKDDqMXyv06I2JghVA8cLPVvebt338a" target="_blank">[ Click Here for our Sponsorship Package ]</a>
+    [ Click Here for our Sponsorship Package ]
   </div>
 </div>
 
@@ -146,53 +136,16 @@ a {
 </div>
 
 <div class="gallery-box">
-  <img class="gallery-slides" src="img/sub_overall.jpg">
-  <img class="gallery-slides" src="img/sub_camera.jpg">
-  <img class="gallery-slides" src="img/sub_torpedo.jpg">
-  <img class="gallery-slides" src="img/sub_presentation.jpg">
-  <img class="gallery-slides" src="img/sub_transdec.jpg">
-  <img class="gallery-slides" src="img/highlander_day.jpg">
-  <img class="gallery-slides" src="img/sub_me_team.jpg">
-  <img class="gallery-slides" src="img/sub_ee_team.jpg">
-  <img class="gallery-slides" src="img/sub_roger.jpg">
-
+    <a href="img/sub_overall.jpg" target="_blank"><img style="width: 30%" src="img/sub_overall.jpg"></a>
+    <a href="img/sub_camera.jpg" target="_blank"><img style="width: 30%" src="img/sub_camera.jpg"></a>
+    <a href="img/sub_torpedo.jpg"><img style="width: 30%" src="img/sub_torpedo.jpg"></a>
+    <a href="img/sub_presentation.jpg"><img style="width: 30%" src="img/sub_presentation.jpg"></a>
+    <a href="img/sub_transdec.jpg" target="_blank"><img style="width: 30%" src="img/sub_transdec.jpg"></a>
+    <a href="img/highlander_day.jpg" target="_blank"><img style="width: 30%" src="img/highlander_day.jpg"></a>
+    <a href="img/sub_me_team.jpg" target="_blank"><img style="width: 30%" src="img/sub_me_team.jpg"></a>
+    <a href="img/sub_ee_team.jpg" target="_blank"><img style="width: 30%" src="img/sub_ee_team.jpg"></a>
+    <a href="img/sub_roger.jpg" target="_blank"><img style="width: 30%" src="img/sub_roger.jpg"></a>
 </div>
-
-<script>
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-      var i;
-      var slides = document.getElementsByClassName("gallery-slides");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) {
-        slideIndex = 1;
-      }
-      
-
-      if (slideIndex == slides.length - 1) {
-        slides[slideIndex].style.display = "inline-block";
-        slides[0].style.display = "inline-block";
-        slides[slideIndex-1].style.display = "inline-block";
-      }
-      else if (slideIndex == slides.length) {
-        slides[0].style.display = "inline-block";
-        slides[1].style.display = "inline-block";
-        slides[slideIndex-1].style.display = "inline-block";
-      }
-      else {
-        slides[slideIndex-1].style.display = "inline-block";
-        slides[slideIndex].style.display = "inline-block";
-        slides[slideIndex+1].style.display = "inline-block";
-      }  
-
-      setTimeout(carousel, 2000); // Change image every 2 seconds
-  }
-</script>
 
 <br><br>
 
@@ -220,38 +173,13 @@ a {
 
 <div class="section-bar">
   <div class="section-title">
-    Leadership Contact
-  </div>
-</div>
-
-<div class="section-text">
-  <br>
-  Project Lead: Adam Anunciation (Electrical Engineering) -- aanun001@ucr.edu
-  <br><br>
-  Mechanical Lead: Jack Kolb (Mechanical Engineering) -- jkolb001@ucr.edu
-  <br><br>
-  Electrical Lead: Gerardo Hernandez (Electrical Engineering) -- ghern027@ucr.edu
-  <br><br>
-  Software Lead: Rogelio Vazquez (Computer Engineering) -- rvazq002@ucr.edu
-  <br><br>
-  Business Lead: Sam Hershkowitz (Business Administration) -- phers001@ucr.edu
-  <br><br>
-</div>
-
-<br><br>
-
-<div class="section-bar">
-  <div class="section-title">
     Sponsors (HUGE thanks!)
   </div>
 </div>
 
 <div class="section-text">
-  <a href="https://www.altium.com" target="_blank"><img style="height: 50pt" src="logos/altium.jpg"></a>
-  <a href="http://www.martinezandturek.com" target="_blank"><img style="height: 50pt" src="logos/mandt.jpg"></a>
-  <a href="https://www.electronicswarehouse.net" target="_blank"><img style="height: 50pt" src="logos/electronics_warehouse.jpg"></a>
-  <a href="https://www.industrialmetalsupply.com" target="_blank"><img style="height: 50pt" src="logos/ims.jpg"></a>
-  <a href="https://www.luxfercylinders.com" target="_blank"><img style="height: 50pt" src="logos/luxfer.jpg"></a>
+  <a href="logos/altium.jpg" target="_blank"><img style="height: 50pt" src="logos/altium.jpg"></a>
+  <a href="logos/mandt.jpg" target="_blank"><img style="height: 50pt" src="logos/mandt.jpg"></a>
 </div>
 
 <br><br>
