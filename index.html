@@ -1,188 +1,144 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>UCR Robosub</title>
-  <meta name="description" content="The official website for UCR Robosub">
-  <meta name="author" content="Jack Kolb - Mechanical Lead">
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RoboSub | UCR</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
 </head>
-
-<style>
-body {
-  background-image: url("img/water_1.jpg");
-
-  font-family: "Tahoma", Tahoma, sans-serif;
-}
-
-.title-bar {
-  background-color: rgba(0, 0, 100, .6);
-  width: 80%;
-  height: auto;
-  padding: 5pt;
-  text-align: center;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.title-text {
-  font-size: 32pt;
-}
-
-.section-bar {
-  background-color: rgba(0, 0, 100, .6);
-  width: 80%;
-  height: auto;
-  padding: 5pt;
-  text-align: center;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.section-title {
-  font-size: 20pt;
-  color: gold;
-}
-
-.section-text {
-  background-color: rgba(30, 30, 30, .4);
-  width: 80%;
-  height: auto;
-  padding: 5pt;
-  text-align: justify;
-
-  font-size: 18pt;
-
-  color: white;
-
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.gallery-box {
-  background-color: rgba(30, 30, 30, .4);
-  width: 80%;
-  height: auto;
-  padding: 5pt;
-  text-align: justify;
-
-  font-size: 13pt;
-
-  color: white;
-
-  margin-left: auto;
-  margin-right: auto;
-
-  text-align: center;
-}
-
-.thumb {
-    display: inline-block;
-    width: 30%;
-    height: 30%;
-    margin: 5px;
-    border: 3px solid #c99;
-    background-position: center center;
-    background-size: cover;
-}
-
-</style>
-
 <body>
 
-<br>
+  <!-- Header -->
+  <header>
+    <img id="hero-logo" src="assets/seadragon_circle_ucryellow.png" alt="Robosub logo">
+    <h1>UCR RoboSub</h1>
+    <hr>
+    <br>
+    <div class="icons">
+      <a class="icon" href="mailto:robosub@ucr.edu"><i class="far fa-envelope"></i></a>
+      <a class="icon" href="https://www.instagram.com/robosubucr/"><i class="fab fa-instagram"></i></a>      
+      <a class="icon" href="https://www.facebook.com/robosub/"><i class="fab fa-facebook-f"></i></a>
+    </div>
+  </header>
 
-<div class="title-bar">
-  <div class="title-text">
-    <span style="color:gold">Robosub</span> <span style="color:lightgrey">@</span> <span style="color:lightblue">UCR</span>
+  <!-- What is RoboSub? -->
+  <section class="grey">
+    <div class="col">
+      <img class="sec-img accompany" src="img/usual_photo.jpg" alt="Robosub by the pool">
+    </div> 
+
+    <div class="col">
+      <h2>The Project</h2>
+      <p class="sec-text right">We are the University of California, Riverside's competitive autonomous underwater vehicle project, competing internationally in <a href="https://www.robonation.org/competition/robosub">RoboNation's RoboSub Competition</a>.</p>
+      <p class="sec-text right">Each year we construct a submarine capable of completing a number of aquatic objectives entirely on its own. The sheer volume of design and construction needed requires a large interdisciplinary team working collaboratively to share expertise and comunication throughout the process.</p>
+      <p class="sec-text right">Sponsored by UCR's IEEE and ASME chapters, the project exposes all students to utilizing their coursework skills, working with others outside their major, and granting experience with a large-scale project with real-world applications. For the 2018-2019 academic year, UCR RoboSub has ~30 active members, across almost every engineering major.</p>
+      <br>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section class="blue">
+    <div class="col">
+      <h2 class="left">The Competition</h2>
+      <p class="sec-text left">The RoboSub competition is an annual week-long marathon at the US Navy's TRANSDEC Terminal in San Diego, California. Submarines traverse a randomized objective course, with challenges revolving around core aspects of naval robotics such as course navigation, obstacle identification, and object manipulation. Tasks change slightly by the year's theme, and generally involve navigating a series of paths, identifying and reacting to patterned buoys, pushing on extruded plates, dropping objects, firing torpedoes at targets, and locating acoustic pingers. All without human intervention.</p>
+    </div>
+    
+    <div class="col">
+      <img src="img/team_photo_2018.jpg" alt="Team Photo 2018 at Competition" class="sec-img accompany">
+    </div>
+  </section>
+
+  <!-- The Submarine -->
+  <section class="grey">
+    <div class="col">
+      <img class="sec-img accompany" src="img/sub_by_grand_marc.jpg" alt="Robosub by the pool">
+    </div> 
+
+    <div class="col">
+      <h2>The Seadragon</h2>
+      <p class="sec-text right">Our latest submarine, the Seadragon, is the result of a thousand hours of design, development, construction, and testing. From notebook sketches to static judging, we built this robot from the ground up and continue to improve upon it. The Seadragon features pressure sensing, leak sensing, a pan-tilt camera, and a body that has withstood 50+ water tests without failure.</p>
+    </div>
+  </section>
+
+  <section class="blue teams">
+    <div class="col">
+      <div class="label">
+        <img src="img/seadragon_cad.png" alt="CAD view of the submarine" class="sec-img accompany">
+        <i class="fas fa-wrench team-i"></i>
+        <h3 class="team-name">Mechanical</h3>
+        <p class="team-desc">The Mechanical team creates the physical structure of the submarine, working with top-down design patterns to create the submarine from conception to completion. Subgroups for components give leadership and small-group experience for members. We use Solidworks to create our models and manufacturing drawings.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="label">
+        <img src="img/sub_electronics.jpg" alt="View of the submarine's electronics" class="sec-img accompany">
+        <i class="fas fa-bolt team-i"></i>
+        <h3 class="team-name">Electrical</h3>
+        <p class="team-desc">The Electrical team creates and organizes the electrical subsystems and sensors within the submarine, designing circuitry, creating PCBs, and networking components. We use Altium Designer to create our PCB diagrams.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="label">
+        <img src="img/roger_whiteboard.jpg" alt="Rogelio at the whiteboard" class="sec-img accompany">
+        <i class="fas fa-terminal team-i"></i> 
+        <h3 class="team-name">Software</h3>
+        <p class="team-desc">The Software team gives the submarine life, creating the artificial intelligence, computer vision, and software interface modules that allow the robot to see, sense, and move. We use Robot Operating System (ROS), Python, and C/C++ for our controls.</p>
+      </div>
+    </div>
+    <div class="col">
+      <div class="label">
+        <img src="img/sam_whiteboard.jpg" alt="Our dear business lead at the whiteboard" class="sec-img accompany">
+        <i class="fas fa-chart-line team-i"></i>
+        <h3 class="team-name">Business & Administration</h3>
+        <p class="team-desc">The Business & Administration team manages the project from a high level: contacting companies for sponsorships, maintaining social media accounts, managing project organization and structure, and assisting the other teams with outreach and contact.</p>
+      </div>
+    </div> 
+  </section>
+
+  <div class="gold">
+    <br>
+    <h2 class="bottom-text">Interested in being a sponsor? Check out our  <a href="https://drive.google.com/open?id=1sp11vWo9nAYVdumU3utJuTBbfk9SM_b3" target="_blank">Sponsorship Proposal</a></h2>
+    <br> 
+ </div>
+
+  <div class="white"">
+    <h2 class="centered">Meeting Times (Fall 2019)</h2>
+    <center>
+      <p class="sec-text">All meetings are in the Solarium (Chung 221)</p>
+      <p class="sec-text">Mechanical Team: Monday & Wednesday at 5pm</p>
+      <p class="sec-text">Electrical Team: Monday 2-5pm; Friday 11-2pm</p>
+      <p class="sec-text">Software Team: Tuesday 4-7pm; Thursday 4-8pm</p>
+      <p class="sec-text">General: Friday at 3pm</p>
+      <p class="sec-text">Water Tests: Saturday at 1pm</p>
+      <p class="sec-text">Can't make meetings? Email <a href="mailto:robosub@ieeeucr.org">robosub@ieeeucr.org</a></p>
+    </center>
+    <br>
   </div>
-</div>
 
-<br><br>
+  <div class="white"">
+    <h2 class="centered">Our Sponsors</h2>
+    <br>
+    <div class="sponsor-grid">
+      <img class="sponsor-img" src="assets/logo/altium.jpg" alt="Altium Logo"/>
+      <img class="sponsor-img" src="assets/logo/ims.jpg" alt="Industrial Metal Supply Logo"/>
+      <img class="sponsor-img" src="assets/logo/electronics_warehouse.jpg" alt="Electronics Warehouse Logo"/>
+    </div>
+    <br>
+    <div class="sponsor-grid">
+      <img class="sponsor-img" src="assets/logo/ieee.png" alt="IEEE Logo">
+      <img class="sponsor-img" src="assets/logo/asmeucr.png" alt="ASME Logo">
+      <img class="sponsor-img" src="assets/logo/mandt.jpg" alt="Martinez and Turek Logo">
+    </div>
+    <br>
+    <div class="sponsor-grid">
+      <a href="https://jlcpcb.com" target="_blank"><img class="sponsor-img" src="assets/logo/jlcpcb.png" alt="JLCPCB Logo"></a>
+      <a href="https://bkcustoms.com" target="_blank"><img class="sponsor-img" src="assets/logo/bkcustoms.png" alt="JLCPCB Logo"></a>
+    </div>
 
-<div class="section-bar">
-  <div class="section-title">
-    [ Click Here for our Sponsorship Package ]
   </div>
-</div>
-
-<br><br>
-
-<div class="section-bar">
-  <div class="section-title">
-    About
-  </div>
-</div>
-
-<div class="section-text">
-  <br>
-  UCR Robosub is an autonomous AUV project, competing internationally in Robonation's Robosub competition. The project started in Fall 2015, and has been active ever since.
-  <br><br>
-  The goal is to create a completely autonomous submarine capable of performing a number of tasks entirely on its own: we place it in the water, it runs the randomized course, completes a number of obstacles (which change annually) and returns to the launch point. The sheer volume of design and construction needed requires a large interdisciplinary team working collaboratively to share expertise and communication throughout the process.
-  <br><br>
-  The project exposes all students to utilizing their coursework skills, working with others outside their major, and granting experience with a large-scale project with real-world applications. For the 2017-2018 school year, UCR Robosub has ~20 members on the team, across almost every engineering major.
-  <br><br>
-</div>
-
-<br><br>
-
-<div class="section-bar">
-  <div class="section-title">
-    Gallery
-  </div>
-</div>
-
-<div class="gallery-box">
-    <a href="img/sub_overall.jpg" target="_blank"><img style="width: 30%" src="img/sub_overall.jpg"></a>
-    <a href="img/sub_camera.jpg" target="_blank"><img style="width: 30%" src="img/sub_camera.jpg"></a>
-    <a href="img/sub_torpedo.jpg"><img style="width: 30%" src="img/sub_torpedo.jpg"></a>
-    <a href="img/sub_presentation.jpg"><img style="width: 30%" src="img/sub_presentation.jpg"></a>
-    <a href="img/sub_transdec.jpg" target="_blank"><img style="width: 30%" src="img/sub_transdec.jpg"></a>
-    <a href="img/highlander_day.jpg" target="_blank"><img style="width: 30%" src="img/highlander_day.jpg"></a>
-    <a href="img/sub_me_team.jpg" target="_blank"><img style="width: 30%" src="img/sub_me_team.jpg"></a>
-    <a href="img/sub_ee_team.jpg" target="_blank"><img style="width: 30%" src="img/sub_ee_team.jpg"></a>
-    <a href="img/sub_roger.jpg" target="_blank"><img style="width: 30%" src="img/sub_roger.jpg"></a>
-</div>
-
-<br><br>
-
-<div class="section-bar">
-  <div class="section-title">
-    The Teams
-  </div>
-</div>
-
-<div class="section-text">
-  <br>
-  The project is divided into four teams: Mechanical, Electrical, Software, and Business. As most of the work is monodisciplinary, the teams work mostly independently during the Fall quarter on their respective portions, coming together in the Winter and Spring to piece the results together, make adjustments, and focus on cross-disciplinary aspects. Biweekly general meetings are forums for members to ask questions and plan designs around the needs of other teams.
-  <br><br>
-  The mechanical team works on the physical design and construction of the submarine. The entire submarine is modeled in Solidworks, with small teams designing and modeling additional components. As the competition objectives change annually, only the base design is reused. The division of work into many small groups allows everyone involved to contribute.
-  <br><br>
-  The electrical team designs the electronic circuitry and manages the components. With custom PCBs and a variety of interconnected parts, they extensively apply their coursework knowledge to manage power, heat dipersion, and a large number of components working asynchronously.
-  <br><br>
-  The software team develops the artificial intelligence portion of the submarine, connecting the mechanical and electrical components to give the submarine life. Using advanced tools including OpenCV and ROS, they create the algorithms to identify objectives (through water's defraction and hazing no less), control the submarine, and accomplish the tasks.
-  <br><br>
-  The business team works to secure fundraising and sponsorships for the project, managing communication and searching for partnerships. 
-  <br><br>
-</div>
-
-<br><br>
-
-<div class="section-bar">
-  <div class="section-title">
-    Sponsors (HUGE thanks!)
-  </div>
-</div>
-
-<div class="section-text">
-  <a href="logos/altium.jpg" target="_blank"><img style="height: 50pt" src="logos/altium.jpg"></a>
-  <a href="logos/mandt.jpg" target="_blank"><img style="height: 50pt" src="logos/mandt.jpg"></a>
-</div>
-
-<br><br>
 
 </body>
 </html>
