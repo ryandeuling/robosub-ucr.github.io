@@ -76,6 +76,15 @@ a:hover {
   padding: 3%;
 }
 
+table.teams {
+  width: 80%;
+  margin: 0 auto;
+}
+
+td.teams {
+  vertical-align: top;
+}
+
 .label {
   text-align: center;
 }
@@ -168,6 +177,19 @@ section {
   margin: 6% auto;
   border-radius: 10px;
   box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1), 10px 10px 30px 4px rgba(45, 78, 255, 0.15);
+}
+
+.team-img {
+  height: auto;
+  width: 50%;
+  background:black;
+  margin: 6% auto;
+  border-radius: 10px;
+  box-shadow: -10px -10px 30px 4px rgba(0, 0, 0, 0.1), 10px 10px 30px 4px rgba(45, 78, 255, 0.15);
+}
+
+.meeting-times {
+  padding: 0pt 10%;
 }
 
 .sec-text {
